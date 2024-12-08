@@ -24,6 +24,12 @@ Set up the database
 sqlite3 /path/to/db.sqlite < db_schema/db_schema.sql
 ```
 
+Generate some positions
+```bash
+# generate positions for 5 minutes
+BGTRAIN_CONFIG_FILE=config python -m generate 5 0
+```
+
 Start the deveserver
 ```bash
 BGTRAIN_CONFIG_FILE=config python -m webapp devserver
