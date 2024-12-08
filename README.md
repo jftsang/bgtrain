@@ -22,7 +22,9 @@ Edit the `config` file to use appropriate directories for your setup.
 Set up the database
 ```bash
 sqlite3 /path/to/db.sqlite < db_schema/db_schema.sql
+ sqlite3 /path/to/db.sqlite < initial_data/initial_data.sql 
 ```
+
 
 Generate some positions
 ```bash
